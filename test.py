@@ -11,9 +11,6 @@ class Teste(unittest.TestCase):
         inst.driver = webdriver.Chrome('C:/automacao/chromedriver.exe')
         inst.driver.get('http://www.google.com')
         
-    def setUp(self):
-        print('setup')   
-        
     @classmethod
     def tearDownClass(inst):
         inst.driver.quit()   
